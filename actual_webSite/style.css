@@ -1,2 +1,50 @@
 /* use this page to format how you want the html files to look im thinking to try to make the background and 
 and headers use our team colors so the pictures we insert look like they belong */
+
+/* Reset default list styles */
+.top-bar ul {
+    list-style-type: none; /* Remove bullets */
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Background color for the top bar */
+    overflow: hidden; /* Clear floats */
+}
+
+/* Style the list items horizontally */
+.top-bar li {
+    float: left; /* Float the list items to make them horizontal */
+}
+
+/* Style the links */
+.top-bar li a {
+    display: block; /* Make the links block-level for padding */
+    color: #ebaa44; /* Text color */
+    text-align: center; /* Center the text */
+    padding: 14px 20px; /* Add padding */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Change link color on hover */
+.top-bar li a:hover {
+    background-color: #555; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+}
+
+/* Optional: Add a highlight for the active page */
+.top-bar li a.active {
+    background-color: #4CAF50; /* Active page background color */
+    color: white; /* Active page text color */
+}
+    h1 {
+        color: #ebaa44;
+    }
+body {
+    background-color: #2e0100;
+}
+h2 {
+    color: #ffffff;
+}
+
+p  {
+        color: #ffffff;
+}
