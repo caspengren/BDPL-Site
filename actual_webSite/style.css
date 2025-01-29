@@ -1,6 +1,20 @@
 /* use this page to format how you want the html files to look im thinking to try to make the background and 
 and headers use our team colors so the pictures we insert look like they belong */
 
+h1 {
+    color: #ebaa44;
+}
+body {
+background-color: #2e0100;
+}
+h2 {
+color: #ebaa44;
+}
+
+p  {
+    color: #ffffff;
+}
+
 /* Reset default list styles */
 .top-bar ul {
     list-style-type: none; /* Remove bullets */
@@ -20,7 +34,7 @@ and headers use our team colors so the pictures we insert look like they belong 
     display: block; /* Make the links block-level for padding */
     color: #ebaa44; /* Text color */
     text-align: center; /* Center the text */
-    padding: 14px 20px; /* Add padding */
+    padding: 14px 25px; /* Add padding */
     text-decoration: none; /* Remove underline */
 }
 
@@ -32,19 +46,6 @@ and headers use our team colors so the pictures we insert look like they belong 
 
 /* Optional: Add a highlight for the active page */
 .top-bar li a.active {
-    background-color: #4CAF50; /* Active page background color */
+    background-color: #555; /* Active page background color */
     color: white; /* Active page text color */
-}
-    h1 {
-        color: #ebaa44;
-    }
-body {
-    background-color: #2e0100;
-}
-h2 {
-    color: #ffffff;
-}
-
-p  {
-        color: #ffffff;
 }
