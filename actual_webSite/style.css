@@ -49,3 +49,8 @@ p  {
     background-color: #555; /* Active page background color */
     color: white; /* Active page text color */
 }
+
+/*Make the email label for the email input white so it can be read */
+#EmailInput {
+    color: white;
+}
