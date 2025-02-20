@@ -3,30 +3,41 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.appendChild(eventsContainer);
 
     const eventsData = [
-        ["BDPLAppleBees.JPG", "BDPLShakeFundRaiser.JPG"],
-        ["BDPLSocialHouse.JPG", "BDPLCrumblFundRaise.JPG"],
-        ["BDPLBdubsDinner.JPG", "BDPLPotluck.JPG"],
-        ["BDPLTeamDinnerBanquet.JPG"]
+        { image: "BDPLAppleBees.JPG", date: "2025-0w-18" },
+        { image: "BDPLShakeFundRaiser.JPG", date: "2025-04-15" },
+        { image: "BDPLSocialHouse.JPG", date: "2025-05-20" },
+        { image: "BDPLCrumblFundRaise.JPG", date: "2025-06-05" },
+        { image: "BDPLBdubsDinner.JPG", date: "2025-07-01" },
+        { image: "BDPLPotluck.JPG", date: "2025-08-10" },
+        { image: "BDPLTeamDinnerBanquet.JPG", date: "2025-09-25" }
     ];
 
-    eventsData.forEach((images, index) => {
-        const eventDiv = document.createElement("div");
-        eventDiv.id = `Events${index + 1}`;
-        eventDiv.style.display = "flex";
-        eventDiv.style.justifyContent = "center";
-        eventDiv.style.gap = "20px";
+    const today = new Date();
 
-        images.forEach(image => {
+    eventsData.forEach(event => {
+        const eventDate = new Date(event.date);
+        if (eventDate >= today) {
+            const eventDiv = document.createElement("div");
+            eventDiv.style.display = "flex";
+            eventDiv.style.flexDirection = "column";
+            eventDiv.style.alignItems = "center";
+            eventDiv.style.gap = "10px";
+
             const imgElement = document.createElement("img");
-            imgElement.src = `Images/${image}`;
+            imgElement.src = `Images/${event.image}`;
             imgElement.alt = "unable to load picture";
             imgElement.style.width = "40%";
             imgElement.style.height = "auto";
-            eventDiv.appendChild(imgElement);
-        });
 
-        eventsContainer.appendChild(eventDiv);
-        eventsContainer.appendChild(document.createElement("br"));
-        eventsContainer.appendChild(document.createElement("hr"));
+            const dateElement = document.createElement("p");
+            dateElement.textContent = `Date: ${event.date}`;
+            dateElement.style.fontWeight = "bold";
+
+            eventDiv.appendChild(imgElement);
+            eventDiv.appendChild(dateElement);
+            eventsContainer.appendChild(eventDiv);
+            eventsContainer.appendChild(document.createElement("br"));
+            eventsContainer.appendChild(document.createElement("hr"));
+        }
     });
 });
