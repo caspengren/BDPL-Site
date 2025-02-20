@@ -3,13 +3,13 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.appendChild(eventsContainer);
 
     const eventsData = [
-        { image: "BDPLAppleBees.JPG", date: "2025-0w-18" },
-        { image: "BDPLShakeFundRaiser.JPG", date: "2025-04-15" },
-        { image: "BDPLSocialHouse.JPG", date: "2025-05-20" },
-        { image: "BDPLCrumblFundRaise.JPG", date: "2025-06-05" },
-        { image: "BDPLBdubsDinner.JPG", date: "2025-07-01" },
-        { image: "BDPLPotluck.JPG", date: "2025-08-10" },
-        { image: "BDPLTeamDinnerBanquet.JPG", date: "2025-09-25" }
+        { image: "BDPLAppleBees.JPG", date: "2025-02-08" },
+        { image: "BDPLShakeFundRaiser.JPG", date: "2025-02-19" },
+        { image: "BDPLSocialHouse.JPG", date: "2025-02-22" },
+        { image: "BDPLCrumblFundRaise.JPG", date: "2025-03-23" },
+        { image: "BDPLBdubsDinner.JPG", date: "2025-04-05" },
+        { image: "BDPLPotluck.JPG", date: "2025-04-25" },
+        { image: "BDPLTeamDinnerBanquet.JPG", date: "2025-04-27" }
     ];
 
     const today = new Date();
