@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { image: "BDPLBdubsDinner.JPG", date: "2025-04-05" },
         { image: "BDPLPotluck.JPG", date: "2025-04-25" },
         { image: "BDPLTeamDinnerBanquet.JPG", date: "2025-04-27" }
+       // {image: "img filename" , date: "year - month - day "}
     ];
 
     const today = new Date();
