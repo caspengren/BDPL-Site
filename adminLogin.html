@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+</head>
+<body>
+    <div id="header"></div>
+    <h2>Admin Login</h2>
+    <form onsubmit="return checkLogin()">
+        <input type="password" id="password" placeholder="Enter Admin Password">
+        <button type="submit">Login</button>
+    </form>
+    <script>
+        function checkLogin() {
+            const password = document.getElementById("password").value;
+            const hardcodedPassword = "bdpl1"; // Change this to your actual password
+
+            if (password === hardcodedPassword) {
+                window.location.href = "admin.html"; // Redirect to the admin page
+                return false;
+            } else {
+                alert("Incorrect password!");
+                return false;
+            }
+        }
+    </script>
+<script src="TopOfpag.js"></script>
+</body>
+</html>
