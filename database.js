@@ -14,13 +14,11 @@
     projectId: "bdplsite",
     storageBucket: "bdplsite.firebasestorage.app",
     messagingSenderId: "459708893175",
-    appId: "1:459708893175:web:b58564d3a66922a34d50f2",
-    measurementId: "G-NW6TJDJVPN"
+    appId: "1:459708893175:web:f99483c6105308274d50f2",
+    measurementId: "G-MDYZ8EQVL9"
   };
 
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
 </script>
-
-this is the script to connect to the firebase project
